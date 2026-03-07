@@ -8,8 +8,8 @@ public class MGaris {
     public static void main(String[] args) {
 
         // membuat dua titik
-        Titik1 A = new Titik1(-2, 0);
-        Titik1 B = new Titik1(0, 4);
+        Titik A = new Titik(-2, 0);
+        Titik B = new Titik(0, 4);
 
         // membuat objek garis dari titik A dan B
         Garis G1 = new Garis(A, B);
@@ -24,7 +24,7 @@ public class MGaris {
         System.out.println("Gradien G1 : " + G1.getGradien());
 
         // menampilkan titik tengah
-        Titik1 tengah = G1.getTitikTengah();
+        Titik tengah = G1.getTitikTengah();
         System.out.print("Titik Tengah G1 : ");
         tengah.printTitik();
 
@@ -32,7 +32,7 @@ public class MGaris {
         System.out.println("Persamaan Garis G1 : " + G1.getPersamaanGaris());
 
         // membuat garis kedua
-        Garis G2 = new Garis(new Titik1(1,1), new Titik1(3,5)); // objek garis baru
+        Garis G2 = new Garis(new Titik(1,1), new Titik(3,5)); // objek garis baru
 
         // mengecek apakah sejajar
         System.out.println("Apakah G1 sejajar dengan G2? " + G1.isSejajar(G2));

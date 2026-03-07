@@ -4,7 +4,7 @@
  * Tanggal     : 25 Februari 2026
  */
 
-public class TitikLengkap {
+public class Titik {
     /*************** ATRIBUT ***************/
     private double absis;
     private double ordinat;
@@ -13,14 +13,14 @@ public class TitikLengkap {
     /*************** METHOD ***************/
 
     // konstruktor untuk membuat titik (0,0)
-    public TitikLengkap() {
+    public Titik() {
         this.absis = 0;
         this.ordinat = 0;
         counterTitik++;
     }
 
     // konstruktor untuk membuat titik dengan absis dan ordinat tertentu
-    public TitikLengkap(double absis, double ordinat) {
+    public Titik(double absis, double ordinat) {
         this.absis = absis;
         this.ordinat = ordinat;
         counterTitik++;
@@ -77,7 +77,7 @@ public class TitikLengkap {
     }
 
     // menghitung jarak antara titik ini dengan titik T
-    public double getJarak(TitikLengkap T) {
+    public double getJarak(Titik T) {
         double a = this.absis - T.getAbsis();
         double b = this.ordinat - T.getOrdinat();
         return Math.sqrt(a * a + b * b);
@@ -94,13 +94,13 @@ public class TitikLengkap {
     }
 
     // menghasilkan titik baru hasil refleksi terhadap sumbu X
-    public TitikLengkap getRefleksiX() {
-        return new TitikLengkap(this.absis, this.ordinat * -1);
+    public Titik getRefleksiX() {
+        return new Titik(this.absis, this.ordinat * -1);
     }
 
     // menghasilkan titik baru hasil refleksi terhadap sumbu Y
-    public TitikLengkap getRefleksiY() {
-        return new TitikLengkap(this.absis * -1, this.ordinat);
+    public Titik getRefleksiY() {
+        return new Titik(this.absis * -1, this.ordinat);
     }
 
     // mencetak koordinat titik

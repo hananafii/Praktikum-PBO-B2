@@ -1,10 +1,10 @@
 /* Nama File   : Titik.java
- * Deskripsi   : berisi atribut dan method dalam class Titik
+ * Deskripsi   : berisi atribut dan method dalam class Titik (LENGKAP)
  * Pembuat     : Hana Nafi'atul Haq
  * Tanggal     : 25 Februari 2026
  */
 
-public class Titik1 {
+public class Titik {
     /*************** ATRIBUT ***************/
     private double absis;
     private double ordinat;
@@ -13,14 +13,14 @@ public class Titik1 {
     /*************** METHOD ***************/
 
     // konstruktor untuk membuat titik (0,0)
-    public Titik1() {
+    public Titik() {
         this.absis = 0;
         this.ordinat = 0;
         counterTitik++;
     }
 
     // konstruktor untuk membuat titik dengan absis dan ordinat tertentu
-    public Titik1(double absis, double ordinat) {
+    public Titik(double absis, double ordinat) {
         this.absis = absis;
         this.ordinat = ordinat;
         counterTitik++;
@@ -77,7 +77,7 @@ public class Titik1 {
     }
 
     // menghitung jarak antara titik ini dengan titik T
-    public double getJarak(Titik1 T) {
+    public double getJarak(Titik T) {
         double a = this.absis - T.getAbsis();
         double b = this.ordinat - T.getOrdinat();
         return Math.sqrt(a * a + b * b);
@@ -94,13 +94,13 @@ public class Titik1 {
     }
 
     // menghasilkan titik baru hasil refleksi terhadap sumbu X
-    public Titik1 getRefleksiX() {
-        return new Titik1(this.absis, this.ordinat * -1);
+    public Titik getRefleksiX() {
+        return new Titik(this.absis, this.ordinat * -1);
     }
 
     // menghasilkan titik baru hasil refleksi terhadap sumbu Y
-    public Titik1 getRefleksiY() {
-        return new Titik1(this.absis * -1, this.ordinat);
+    public Titik getRefleksiY() {
+        return new Titik(this.absis * -1, this.ordinat);
     }
 
     // mencetak koordinat titik

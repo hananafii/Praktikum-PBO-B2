@@ -6,44 +6,44 @@
 
 public class Garis {
     /*************** ATRIBUT ***************/
-    private Titik1 titikAwal;
-    private Titik1 titikAkhir;
+    private Titik titikAwal;
+    private Titik titikAkhir;
     private static int counterGaris = 0;
 
     /*************** METHOD ***************/
     // konstruktor 
     // menginisialisasi titikAwal (0,0) dan titikAkhir (1,1)
     public Garis() {
-        this.titikAwal = new Titik1(0, 0);
-        this.titikAkhir = new Titik1(1, 1);
+        this.titikAwal = new Titik(0, 0);
+        this.titikAkhir = new Titik(1, 1);
         counterGaris++;
     }
 
     // konstruktor dengan parameter
     // menerima dua objek Titik sebagai titik awal dan akhir
-    public Garis(Titik1 titikAwal, Titik1 titikAkhir) {
+    public Garis(Titik titikAwal, Titik titikAkhir) {
         this.titikAwal = titikAwal;
         this.titikAkhir = titikAkhir;
         counterGaris++;
     }
 
     // mengembalikan titik awal
-    public Titik1 getTitikAwal() {
+    public Titik getTitikAwal() {
         return titikAwal;
     }
 
     // mengembalikan titik akhir
-    public Titik1 getTitikAkhir() {
+    public Titik getTitikAkhir() {
         return titikAkhir;
     }
 
     // mengeset titik awal
-    public void setTitikAwal(Titik1 titikAwal) {
+    public void setTitikAwal(Titik titikAwal) {
         this.titikAwal = titikAwal;
     }
 
     // mengeset titik akhir
-    public void setTitikAkhir(Titik1 titikAkhir) {
+    public void setTitikAkhir(Titik titikAkhir) {
         this.titikAkhir = titikAkhir;
     }
 
@@ -75,11 +75,11 @@ public class Garis {
 
     // menghitung titik tengah garis
     // rumus: ((x1+x2)/2 , (y1+y2)/2)
-    public Titik1 getTitikTengah() {
+    public Titik getTitikTengah() {
         double xTengah = (titikAwal.getAbsis() + titikAkhir.getAbsis()) / 2;
         double yTengah = (titikAwal.getOrdinat() + titikAkhir.getOrdinat()) / 2;
 
-        return new Titik1(xTengah, yTengah);
+        return new Titik(xTengah, yTengah);
     }
 
     // mengecek apakah garis sejajar dengan garis lain
