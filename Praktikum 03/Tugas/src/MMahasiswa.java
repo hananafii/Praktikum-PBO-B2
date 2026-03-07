@@ -47,9 +47,7 @@ public class MMahasiswa {
         m2.addMatKul(mk8); 
 
         m1.printDetailMhs(); // menampilkan detail mahasiswa pertama
-        // batasan mahasiswa pertama dan kedua
-        System.out.println();
-        System.out.println("==================================");
+        System.out.println("\n=================================="); // batasan mahasiswa pertama dan kedua
         m2.printDetailMhs(); // menampilkan detail mahasiswa kedua
     }
 }

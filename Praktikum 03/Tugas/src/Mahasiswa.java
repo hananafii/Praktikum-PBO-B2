@@ -111,24 +111,17 @@ public class Mahasiswa {
     public void printDetailMhs() {
         System.out.println("Data mahasiswa ");
         printMhs();
-
         System.out.println("\nDosen Wali:");
         System.out.println("NIP   : " + dosenWali.getNip());
         System.out.println("Nama  : " + dosenWali.getNama());
         System.out.println("Prodi : " + dosenWali.getProdi());
-
         System.out.println("\nKendaraan:");
         System.out.println("No Plat : " + kendaraan.getNoPlat());
         System.out.println("Jenis   : " + kendaraan.getJenis());
-
         System.out.println("\nDaftar Mata Kuliah:");
         for (int i = 0; i < jumlahMatKul; i++) {
-            System.out.println(
-                listMatKul[i].getIdMatKul() + " - " + listMatKul[i].getNama() + 
-                " (" + listMatKul[i].getSks() + " SKS)"
-            );
+            System.out.println( listMatKul[i].getIdMatKul() + " - " + listMatKul[i].getNama() + " (" + listMatKul[i].getSks() + " SKS)");
         }
-
         System.out.println("\nJumlah Mata Kuliah : " + getJumlahMatKul());
         System.out.println("Total SKS          : " + getJumlahSKS());
     }
