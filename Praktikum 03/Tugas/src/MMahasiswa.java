@@ -1,5 +1,8 @@
 public class MMahasiswa {
     public static void main(String[] args) {
+        // DEPENDENCY : Class MMahasiswa bergantung pada class lain karena membuat objek
+        // dan menggunakan method dari class Dosen, Mahasiswa, Kendaraan, dan MataKuliah.
+        
         // membuat objek dosen wali
         Dosen d1 = new Dosen("196902141994032001", "Dr. Budi Santoso", "Informatika"); 
         Dosen d2 = new Dosen("197805102000031001", "Dr. Siti Rahmawati", "Informatika"); 
@@ -22,10 +25,17 @@ public class MMahasiswa {
         MataKuliah mk7 = new MataKuliah("MIK1624601", "Keamanan dan Jaminan Informasi", 3); 
         MataKuliah mk8 = new MataKuliah("MIK1624603", "Interaksi Manusia Komputer", 3); 
 
+        // ASOSIASI : Hubungan antara dua kelas hanya menggunakan ( Mahasiswa berhubungan dengan Dosen (dosen wali))
+        // KOMPOSISI : Hubungan kepemilikan kuat (mahasiswa dapat memiliki kendaraan dan dimiliki eksklusif oleh satu mahasiswa
+        // Jika objek Mahasiswa dihapus maka hubungan kepemilikan kendaraan juga hilang.)
+        
         // mengeset dosen wali dan kendaraan mahasiswa pertama
         m1.setDosenWali(d1); 
         m1.setKendaraan(k1); 
 
+        // AGREGASI : Hubungan kepemilikan lemah (Mahasiswa mengambil MataKuliah, tetapi MataKuliah tetap ada walaupun Mahasiswa dihapus
+        // dan MataKuliah yang sama dapat diambil oleh banyak mahasiswa.)
+        
         // menambahkan matkul mahasiswa pertama
         m1.addMatKul(mk1); 
         m1.addMatKul(mk2); 
