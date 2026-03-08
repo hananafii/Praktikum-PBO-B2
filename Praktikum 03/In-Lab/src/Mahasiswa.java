@@ -1,3 +1,9 @@
+/* Nama File   : Mahasiswa.java
+ * Deskripsi   : berisi atribut dan method dalam class Mahasiswa
+ * Pembuat     : Hana Nafi'atul Haq
+ * Tanggal     : 04 Maret 2026
+ */
+
 public class Mahasiswa {
     /*************** ATRIBUT ***************/
     private String nim;

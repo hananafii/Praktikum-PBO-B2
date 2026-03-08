@@ -1,3 +1,9 @@
+/* Nama File   : MMahasiswa.java
+ * Deskripsi   : Berisi program utama class MMahasiswa
+ * Pembuat     : Hana Nafi'atul Haq
+ * Tanggal     : 04 Maret 2026
+ */
+
 public class MMahasiswa {
     public static void main(String[] args) {
         // DEPENDENCY : Class MMahasiswa bergantung pada class lain karena membuat objek

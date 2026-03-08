@@ -1,3 +1,9 @@
+/* Nama File   : Kendaraan.java
+ * Deskripsi   : berisi atribut dan method dalam class Kendaraan
+ * Pembuat     : Hana Nafi'atul Haq
+ * Tanggal     : 04 Maret 2026
+ */
+
 public class Kendaraan {
     /*************** ATRIBUT ***************/
     private String noPlat;
