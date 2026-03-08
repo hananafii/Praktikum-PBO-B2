@@ -3,25 +3,26 @@
  * Pembuat     : Hana Nafi'atul Haq
  * Tanggal     : 04 Maret 2026
  */
+import java.util.ArrayList;
 
 public class Mahasiswa {
     /*************** ATRIBUT ***************/
     private String nim;
     private String nama;
     private String prodi;
-    private static MataKuliah[] listMatKul = new MataKuliah[50];
+    private ArrayList<MataKuliah> listMatkul;
     private Dosen dosenWali;
     private Kendaraan kendaraan;
 
-    private int jumlahMatKul = 0;
+    // Array statik 50
+    // private MataKuliah[] listMatKul = new MataKuliah[50];
+    // private int jumlahMatKul = 0;
 
     /*************** METHOD ***************/
     // konstruktor tanpa parameter
     // menginisialisasi nim, nama, dan prodi dengan string kosong
-     public Mahasiswa() {
-        nim = "";
-        nama = "";
-        prodi = "";
+    public Mahasiswa() {
+        listMatkul = new ArrayList<>();
     }
 
     // konstruktor dengan parameter
@@ -30,6 +31,7 @@ public class Mahasiswa {
         this.nim = nim;
         this.nama = nama;
         this.prodi = prodi;
+        this.listMatkul = new ArrayList<>();
     }
 
     // mengembalikan nim
@@ -84,9 +86,10 @@ public class Mahasiswa {
 
     // menambahkan mata kuliah ke dalam listMatKul
     public void addMatKul(MataKuliah mk) {
-        if (jumlahMatKul < 50) {
-            listMatKul[jumlahMatKul] = mk;
-            jumlahMatKul++;
+        if (listMatkul.size() < 50) {
+            listMatkul.add(mk);
+            // listMatKul[jumlahMatKul] = mk;
+            // jumlahMatKul++;
         }
     }
 
@@ -95,15 +98,18 @@ public class Mahasiswa {
         int totalSKS = 0;
         int i;
 
-        for (i = 0; i < jumlahMatKul; i++) {
-            totalSKS += listMatKul[i].getSks();
+        for (i = 0; i < listMatkul.size(); i++) {
+            totalSKS += listMatkul.get(i).getSks();
+            // totalSKS += listMatKul[i].getSks();
         }
+
         return totalSKS;
     }
 
     // mengembalikan jumlah mata kuliah yang diambil mahasiswa
     public int getJumlahMatKul() {
-        return jumlahMatKul;
+        return listMatkul.size();
+        // return jumlahMatKul;
     }
 
     // menampilkan nim, nama, dan prodi mahasiswa
@@ -115,6 +121,8 @@ public class Mahasiswa {
 
     // menampilkan detail lengkap mahasiswa
     public void printDetailMhs() {
+        int i;
+
         System.out.println("Data mahasiswa ");
         printMhs();
         System.out.println("\nDosen Wali:");
@@ -125,9 +133,13 @@ public class Mahasiswa {
         System.out.println("No Plat : " + kendaraan.getNoPlat());
         System.out.println("Jenis   : " + kendaraan.getJenis());
         System.out.println("\nDaftar Mata Kuliah:");
-        for (int i = 0; i < jumlahMatKul; i++) {
-            System.out.println( listMatKul[i].getIdMatKul() + " - " + listMatKul[i].getNama() + " (" + listMatKul[i].getSks() + " SKS)");
+        for (i = 0; i < listMatkul.size(); i++) {
+            MataKuliah mk = listMatkul.get(i);
+            System.out.println(mk.getIdMatKul() + " - " + mk.getNama() + " (" + mk.getSks() + " SKS)");
         }
+        // for (int i = 0; i < jumlahMatKul; i++) {
+        //     System.out.println( listMatKul[i].getIdMatKul() + " - " + listMatKul[i].getNama() + " (" + listMatKul[i].getSks() + " SKS)");
+        // }
         System.out.println("\nJumlah Mata Kuliah : " + getJumlahMatKul());
         System.out.println("Total SKS          : " + getJumlahSKS());
     }
