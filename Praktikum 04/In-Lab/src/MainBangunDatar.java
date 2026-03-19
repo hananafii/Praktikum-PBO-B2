@@ -3,7 +3,7 @@
  * Pembuat     : Hana Nafi'atul Haq
  * Tanggal     : 11 Maret 2026
  */
-
+ 
 public class MainBangunDatar {
     public static void main(String[] args) {
         // membuat objek Persegi
@@ -15,10 +15,6 @@ public class MainBangunDatar {
         // menampilkan informasi Persegi 1
         System.out.println("\nPersegi 1");
         P1.printInfo();
-
-        // memanggil method keliling dan diagonal
-        System.out.println("Keliling        : " + P1.getKeliling());
-        System.out.println("Diagonal        : " + P1.getDiagonal());
         System.out.println();
 
         // membuat objek Persegi dengan konstruktor parameter
@@ -27,10 +23,6 @@ public class MainBangunDatar {
         // menampilkan informasi Persegi 2
         System.out.println("Persegi 2");
         P2.printInfo();
-
-        // memanggil method keliling dan diagonal
-        System.out.println("Keliling        : " + P2.getKeliling());
-        System.out.println("Diagonal        : " + P2.getDiagonal());
         System.out.println();
 
         // membuat objek Lingkaran

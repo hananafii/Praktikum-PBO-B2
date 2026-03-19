@@ -1,10 +1,10 @@
 /* Nama File   : BangunDatar.java
- * Deskripsi   : berisi atribut dan method dalam clss Bangun Datar
+ * Deskripsi   : berisi atribut dan method dalam class Bangun Datar (abstract)
  * Pembuat     : Hana Nafi'atul Haq
- * Tanggal     : 11 Maret 2026
- */ 
+ * Tanggal     : 18 Maret 2026
+ */
 
-public class BangunDatar {
+public abstract class BangunDatar {
     /*************** ATRIBUT ***************/
     protected int jmlSisi;
     protected String warna;
@@ -66,5 +66,21 @@ public class BangunDatar {
         System.out.println("Jumlah sisi     : " + jmlSisi);
         System.out.println("Warna           : " + warna);
         System.out.println("Border          : " + border);
+    }
+
+    // ABSTRACT METHOD
+    public abstract double getLuas();
+    public abstract double getKeliling();
+
+    // METHOD PERBANDINGAN
+    // membandingkan apakah kedua luas antara kedua bangun datar sama
+    public boolean isEqualLuas(BangunDatar X) {
+        return this.getLuas() == X.getLuas();
+    }
+
+    // membandingkan apakah kedua keliling antara kedua bangun datar sama
+    public boolean isEqualKeliling(BangunDatar X) {
+        return this.getKeliling() == X.getKeliling();
+    
     }
 }
