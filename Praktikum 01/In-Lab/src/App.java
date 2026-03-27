@@ -4,7 +4,7 @@
  * Tanggal     : 19 Februari 2026
  */
 
-public class App {
+public class App { 
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         System.out.println("\nContoh 1: Variables dan Conditionals ");
