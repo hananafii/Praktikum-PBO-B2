@@ -12,14 +12,20 @@
 
     ANSWER
     Baris 12 sesuai modul --> System.out.println(angka + " bukan angka sial");
-    tidak dieksekusi ketika terjadi exception, karena saat angka 13
-    memenuhi kondisi dan perintah throw dijalankan, program langsung
-    keluar dari \dan berpindah ke bagian catch sehingga perintah
-    print tersebut tidak dijalankan.
+    tidak dieksekusi saat terjadi exception karena ketika
+    cobaAngka(13) dipanggil, kondisi (angka == 13) terpenuhi dan
+    perintah throw dijalankan, jadi program langsung keluar dari method
+    cobaAngka dan tidak lanjut ke perintah baris 12.
 
-    Baris 21 sesuai modul --> System.out.println("hati-hati memasukkan angka!!!");
-    dieksekusi karena berada di dalam blok catch yang akan dijalankan
-    ketika exception terjadi.
+    Setelah exception terjadi, program juga tidak melanjutkan perintah
+    berikutnya di dalam blok try (termasuk cobaAngka(12)), tetapi langsung
+    masuk ke blok catch.
+
+    Baris 21 sesuai modul --> catch(AngkaSialException ase)
+    dieksekusi karena merupakan bagian awal dari blok catch
+    yang memang akan dijalankan saat exception terjadi. 
+    Perintah yang ada di dalam catch kemudian dijalankan
+    untuk menangani exception tersebut.
 */
 
 public class AngkaSial{
