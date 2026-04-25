@@ -1,0 +1,27 @@
+/* Nama File   : SimpulanPolimorfisme
+ * Deskripsi   : Berisi simpulan bagaimana cara kerja Polimorfisme
+ * Pembuat     : Hana Nafi'atul Haq
+ * Tanggal     : 22 Maret 2026
+ */
+
+Polimorfisme adalah konsep dalam pemrograman berorientasi objek di mana satu method atau satu tipe data 
+dapat digunakan dalam berbagai bentuk, tetapi menghasilkan perilaku yang berbeda tergantung konteks 
+penggunaannya. Dengan adanya polimorfisme, kita tidak perlu membuat banyak method dengan nama berbeda, 
+karena cukup satu nama yang sama namun dapat menyesuaikan dengan kondisi yang ada.
+
+Dalam praktikum ini, polimorfisme terlihat dalam beberapa bentuk. Pada bagian polimorfisme ad hoc coercion, 
+terjadi perubahan tipe data, seperti dari integer ke karakter, real, atau string, serta sebaliknya. Hal ini 
+menunjukkan bahwa satu nilai dapat direpresentasikan dalam berbagai bentuk sesuai kebutuhan.
+
+Pada bagian polimorfisme ad hoc overloading, method dengan nama yang sama digunakan tetapi memiliki 
+parameter yang berbeda, seperti pada method setProgramStudi dalam kelas Mahasiswa. Setiap varian method 
+memberikan hasil yang berbeda tergantung parameter yang diberikan.
+
+Selanjutnya, pada polimorfisme universal inclusion, konsep ini diterapkan melalui pewarisan (inheritance) 
+dan overriding. Pada kasus Anabul, method yang sama seperti suara() dan gerak() menghasilkan perilaku 
+berbeda pada Kucing, Anjing, dan Burung. Begitu juga pada kasus Seminar, kelas CivitasAkademika sebagai 
+kelas induk digunakan untuk menampung objek Dosen dan Mahasiswa dalam satu array, dan method getNomor() 
+akan menyesuaikan hasilnya menjadi NIP atau NIM sesuai jenis objeknya.
+
+Dengan demikian, polimorfisme membuat program menjadi lebih fleksibel dan efisien karena satu struktur kode 
+dapat digunakan untuk menangani berbagai kondisi yang berbeda.
