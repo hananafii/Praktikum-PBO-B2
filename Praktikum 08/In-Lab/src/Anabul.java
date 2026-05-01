@@ -1,7 +1,7 @@
 /* Nama File   : Anabul.java
  * Deskripsi   : Class induk hewan peliharaan
  * Pembuat     : Hana Nafi'atul Haq
- * Tanggal     : 22 Maret 2026
+ * Tanggal     : 29 Maret 2026
  */
 
 public class Anabul {

@@ -6,10 +6,18 @@
 
 public class MAnabul {
     public static void main(String[] args) {
+
+        // kamus
+        Anabul kucing;
+        Anabul anjing;
+        Anabul burung;
+
+        // algoritma
+
         // Membuat objek baru
-        Anabul kucing = new Kucing();
-        Anabul anjing = new Anjing();
-        Anabul burung = new Burung();
+        kucing = new Kucing();
+        anjing = new Anjing();
+        burung = new Burung();
 
         // kucing
         System.out.println("Kucing");

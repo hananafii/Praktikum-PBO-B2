@@ -6,14 +6,22 @@
 
 public class MMahasiswa {
     public static void main(String[] args) {
+
+        // kamus
+        Mahasiswa m1;
+        Mahasiswa m2;
+        Mahasiswa m3;
+
+        // algoritma
+
         // konstruktor tanpa parameter
-        Mahasiswa m1 = new Mahasiswa();
+        m1 = new Mahasiswa();
 
         // konstruktor dengan 3 buah parameter
-        Mahasiswa m2 = new Mahasiswa("001", "Hana Nafi'atul Haq", "Informatika");
+        m2 = new Mahasiswa("001", "Hana Nafi'atul Haq", "Informatika");
 
         // konstruktor dengan parameter objek Mahasiswa lain
-        Mahasiswa m3 = new Mahasiswa(m2);
+        m3 = new Mahasiswa(m2);
 
         // setProgramStudi varian 1
         m1.setProgramStudi();

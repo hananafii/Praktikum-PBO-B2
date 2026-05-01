@@ -4,23 +4,23 @@
  * Tanggal     : 22 Maret 2026
  */
 
-class Seminar {
-    CivitasAkademika[] pesertas; 
-    int banyakPeserta;           
+public class Seminar {
+    private CivitasAkademika[] pesertas; 
+    private int banyakPeserta;           
 
     // konstruktor seminar
-    Seminar() {
+    public Seminar() {
         pesertas = new CivitasAkademika[100];
         banyakPeserta = 0;
     }
 
     // menghitung jumlah peserta
-    int countPeserta() {
+    public int countPeserta() {
         return banyakPeserta;
     }
 
     // menambahkan peserta ke dalam seminar
-    void registrasi(CivitasAkademika ca) {
+    public void registrasi(CivitasAkademika ca) {
         if (banyakPeserta < 100) {
             pesertas[banyakPeserta] = ca;
             banyakPeserta++;
@@ -28,7 +28,7 @@ class Seminar {
     }
   
    // menampilkan seluruh peserta seminar
-    void tampilPeserta() {
+    public void tampilPeserta() {
         for (int i = 0; i < banyakPeserta; i++) {
             System.out.println("Peserta ke-" + (i + 1));
             System.out.println("Nomor : " + pesertas[i].getNomor());
@@ -38,7 +38,7 @@ class Seminar {
     }
 
     // menghitung jumlah mahasiswa menggunakan instanceof
-    int countMahasiswa() {
+    public int countMahasiswa() {
         int count = 0;
         for (int i = 0; i < banyakPeserta; i++) {
             if (pesertas[i] instanceof MahasiswaCA) {
@@ -47,4 +47,4 @@ class Seminar {
         }
         return count;
     }
-} 
+}

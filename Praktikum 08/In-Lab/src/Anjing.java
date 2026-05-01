@@ -1,11 +1,11 @@
 /* Nama File   : Anjing.java
  * Deskripsi   : Class Anjing turunan Anabul
  * Pembuat     : Hana Nafi'atul Haq
- * Tanggal     : 22 Maret 2026
+ * Tanggal     : 29 Maret 2026
  */
 
 public class Anjing extends Anabul {
-    
+
     // override suara anjing
     @Override
     public void suara() {

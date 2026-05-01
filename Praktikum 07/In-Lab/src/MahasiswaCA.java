@@ -4,12 +4,12 @@
  * Tanggal     : 22 Maret 2026
  */
 
-class MahasiswaCA extends CivitasAkademika {
+public class MahasiswaCA extends CivitasAkademika {
     private String nim;
     private Dosen dosenWali;
 
     // konstruktor
-    MahasiswaCA(String nim, String nama, Dosen dosenWali) {
+    public MahasiswaCA(String nim, String nama, Dosen dosenWali) {
         super(nama);
         this.nim = nim;
         this.dosenWali = dosenWali;
@@ -49,4 +49,4 @@ class MahasiswaCA extends CivitasAkademika {
         System.out.println("Nama        : " + getNama());
         System.out.println("Dosen Wali  : " + dosenWali.getNama());
     }
-} 
+}

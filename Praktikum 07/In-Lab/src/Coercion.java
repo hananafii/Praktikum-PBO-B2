@@ -25,6 +25,7 @@ public class Coercion {
         System.out.println("Integer : " + i);
 
         System.out.println();
+        
         // String awal X dan Y
         String X = "1234";
         String Y = "5678";
@@ -38,6 +39,7 @@ public class Coercion {
         System.out.println("Penjumlahan Z: " + Z);
 
         System.out.println();
+        
         // String awal P dan Q
         String P = "12.34";
         String Q = "56.78";
@@ -51,6 +53,7 @@ public class Coercion {
         System.out.println("Penjumlahan D: " + D);
 
         System.out.println();
+        
         // String -> int
         // S = "12345678"
         Integer A = Integer.parseInt(S); 

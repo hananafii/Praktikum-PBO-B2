@@ -4,16 +4,16 @@
  * Tanggal     : 22 Maret 2026
  */
 
-class CivitasAkademika {
+public class CivitasAkademika {
     private String nama; 
 
     // konstruktor tanpa parameter
-    CivitasAkademika() {
+    public CivitasAkademika() {
         this.nama = "n/a";
     }
 
     // konstruktor dengan parameter
-    CivitasAkademika(String nama) {
+    public CivitasAkademika(String nama) {
         this.nama = nama;
     }
 
@@ -31,4 +31,4 @@ class CivitasAkademika {
     public String getNomor() {
         return "";
     }
-} 
+}

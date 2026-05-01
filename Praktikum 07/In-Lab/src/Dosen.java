@@ -4,11 +4,11 @@
  * Tanggal     : 22 Maret 2026
  */
 
-class Dosen extends CivitasAkademika {
+public class Dosen extends CivitasAkademika {
     private String nip;
 
     // konstruktor
-    Dosen(String nip, String nama) {
+    public Dosen(String nip, String nama) {
         super(nama);
         this.nip = nip;
     }
@@ -28,4 +28,4 @@ class Dosen extends CivitasAkademika {
     public String getNomor() {
         return nip;
     }
-} 
+}
