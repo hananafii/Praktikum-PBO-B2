@@ -1,0 +1,27 @@
+/* Nama File   : SimpulanKoleksi
+ * Deskripsi   : Berisi simpulan bagaimana cara kerja Koleksi
+ * Pembuat     : Hana Nafi'atul Haq
+ * Tanggal     : 6 Mei 2026
+ */
+
+Koleksi adalah konsep dalam pemrograman Java yang digunakan untuk menyimpan dan mengelola sekumpulan data 
+atau objek dalam satu wadah secara terstruktur. Dengan menggunakan koleksi, proses penambahan, penghapusan, 
+pencarian, maupun pengolahan data menjadi lebih mudah dan fleksibel dibandingkan menggunakan array biasa, 
+karena ukuran koleksi dapat berubah secara dinamis sesuai kebutuhan program.
+
+Dalam praktikum ini, konsep koleksi diterapkan menggunakan ArrayList dan Queue dari Java Collection Framework. 
+Pada kelas Teman, ArrayList<String> digunakan untuk menyimpan kumpulan nama teman. Melalui koleksi tersebut, 
+data dapat ditambahkan menggunakan addNama(), dihapus menggunakan delNama(), dicek keberadaannya dengan 
+isMember(), serta dihitung jumlah kemunculannya menggunakan countNama(). Selain itu, seluruh isi koleksi dapat 
+ditampilkan menggunakan method showTeman().
+
+Selanjutnya, pada kelas Piaraan digunakan Queue<Anabul> untuk merepresentasikan antrean hewan peliharaan 
+dalam klinik. Konsep antrean bekerja dengan prinsip FIFO (First In First Out), yaitu data yang pertama masuk 
+akan menjadi data pertama yang keluar. Operasi enqueueAnabul() digunakan untuk menambahkan objek Anabul ke 
+dalam antrean, sedangkan dequeueAnabul() digunakan untuk mengambil sekaligus menghapus objek pertama dalam 
+antrean.
+
+Konsep koleksi juga dipadukan dengan pewarisan dan polimorfisme. Queue<Anabul> dapat menyimpan berbagai 
+objek turunan seperti Anggora, Kembangtelon, Anjing, dan Burung dalam satu koleksi yang sama. Dengan bantuan 
+operator instanceof dan getClass().getName(), program dapat mengenali jenis objek yang tersimpan di dalam 
+koleksi dan memprosesnya sesuai tipe masing-masing.
